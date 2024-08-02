@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@interface/*" : ["./src/sdk/interface/*" ],
+      "@enum/*"      : ["./src/sdk/enum/*"      ],
+
+      "@controller/*": ["./src/controller/*"    ],
+      "@module/*"    : ["./src/module/*"        ],
+      "@route/*"     : ["./src/route/*"         ],
+      "@model/*"     : ["./src/model/*"         ],
+      "@util/*"      : ["./src/util/*"          ],
+
+      "@package"     : ["./package.json"        ],
+    },
+    "declaration": true
+  },
+  "include": [
+    "src",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
